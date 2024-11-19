@@ -1,13 +1,11 @@
-package com.example.exception;
+package com.example.demo.exception;
 
-public class createEmployeeException extends RuntimeException{
-
-	private String message;
+public class DepartmentException extends RuntimeException{
 
 	/**
 	 * 
 	 */
-	public createEmployeeException() {
+	public DepartmentException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -18,8 +16,7 @@ public class createEmployeeException extends RuntimeException{
 	 * @param enableSuppression
 	 * @param writableStackTrace
 	 */
-	public createEmployeeException(String message, Throwable cause, boolean enableSuppression,
-			boolean writableStackTrace) {
+	public DepartmentException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 		// TODO Auto-generated constructor stub
 	}
@@ -28,7 +25,7 @@ public class createEmployeeException extends RuntimeException{
 	 * @param message
 	 * @param cause
 	 */
-	public createEmployeeException(String message, Throwable cause) {
+	public DepartmentException(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
 	}
@@ -36,7 +33,7 @@ public class createEmployeeException extends RuntimeException{
 	/**
 	 * @param message
 	 */
-	public createEmployeeException(String message) {
+	public DepartmentException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
@@ -44,9 +41,9 @@ public class createEmployeeException extends RuntimeException{
 	/**
 	 * @param cause
 	 */
-	public createEmployeeException(Throwable cause) {
+	public DepartmentException(Throwable cause) {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 }

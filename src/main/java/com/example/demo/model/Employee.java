@@ -28,12 +28,12 @@ public class Employee {
 	private String jobId;
 	@Column(name ="salary")
 	private int salary;
-	@Column(name ="commission_pct")
-	private float commissionPct;
-	@Column(name ="manager_id")
-	private int managerId;
-	@Column(name ="department_id")
-	private int departmentId;
+	@Column(name ="commission_pct",nullable=true)
+	private Float commissionPct;
+	@Column(name ="manager_id" , nullable=true)
+	private Integer managerId;
+	@Column(name ="department_id", nullable=true)
+	private Integer departmentId;
 	
 	
 	
@@ -85,23 +85,30 @@ public class Employee {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-	public float getCommissionPct() {
+	public Float getCommissionPct() {
 		return commissionPct;
 	}
-	public void setCommissionPct(float commissionPct) {
+	public void setCommissionPct(Float commissionPct) {
 		this.commissionPct = commissionPct;
 	}
-	public int getManagerId() {
+	public Integer getManagerId() {
 		return managerId;
 	}
-	public void setManagerId(int managerId) {
+	public void setManagerId(Integer managerId) {
 		this.managerId = managerId;
 	}
-	public int getDepartmentId() {
+	public Integer getDepartmentId() {
 		return departmentId;
 	}
-	public void setDepartmentId(int departmentId) {
+	public void setDepartmentId(Integer departmentId) {
 		this.departmentId = departmentId;
+	}
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
+				+ email + ", phoneNumber=" + phoneNumber + ", hireDate=" + hireDate + ", jobId=" + jobId + ", salary="
+				+ salary + ", commissionPct=" + commissionPct + ", managerId=" + managerId + ", departmentId="
+				+ departmentId + "]";
 	}
 	
 	

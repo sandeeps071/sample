@@ -1,9 +1,9 @@
-package com.example.service;
+package com.example.demo.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.demo.model.EmploDept;
+
 import com.example.demo.model.Employee;
 
 public interface EmployeeServic {
@@ -17,6 +17,5 @@ public interface EmployeeServic {
 	// update employee
 	public Employee updateempl(Employee empp,int eid);
 	
-	public List<EmploDept> getEmployeeDep(int did);
 
 }

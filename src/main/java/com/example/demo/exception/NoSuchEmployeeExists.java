@@ -1,6 +1,13 @@
-package com.example.exception;
+package com.example.demo.exception;
+
+
 
 public class NoSuchEmployeeExists extends RuntimeException {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/**
 	 * 
 	 */

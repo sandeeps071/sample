@@ -11,8 +11,9 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="departments")
-public class Department {
+public class DepartmentModel {
 	
+
 	@Id
 	@Column(name ="DEPARTMENT_ID")
 	private int departmentId;
@@ -42,19 +43,17 @@ public class Department {
 		this.managerId = managerId;
 	}
 	
-//	@OneToMany
-//	@JoinColumn(name="DEPARTMENT_ID" ,referencedColumnName = "DEPARTMENT_ID")
-//	private List<Employee> emplist;
-//	
-//	public List<Employee> getEmplist() {
-//		return emplist;
-//	}
-//	public void setEmplist(List<Employee> emplist) {
-//		this.emplist = emplist;
-//	}
+	@OneToMany
+	@JoinColumn(name="DEPARTMENT_ID" ,referencedColumnName = "DEPARTMENT_ID")
+	private List<Employee> emplist;
+	
+	public List<Employee> getEmplist() {
+		return emplist;
+	}
+	public void setEmplist(List<Employee> emplist) {
+		this.emplist = emplist;
+	}
 
-	
-	
 	
 	
 
